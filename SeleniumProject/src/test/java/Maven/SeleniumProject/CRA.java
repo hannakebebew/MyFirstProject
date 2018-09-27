@@ -24,7 +24,7 @@ public class CRA {
 	public void craAccounts () throws InterruptedException {
 			
 		try {
-			driver = WebDrivers.fireFox();
+			driver = WebDrivers.FireFox();
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
 			driver.get("http://www.cra-arc.gc.ca/");

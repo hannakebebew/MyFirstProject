@@ -14,7 +14,7 @@ public class WebDrivers {
 		
 	} 
 	
-	public static WebDriver fireFox() {
+	public static WebDriver FireFox() {
 		
 		System.setProperty("webdriver.gecko.driver", "/Users/hannakebebew/Desktop/SelaniumDrivers/geckodriver");
 		WebDriver driver = new FirefoxDriver ();

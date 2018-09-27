@@ -8,7 +8,7 @@ public class ExcersiceMilan {
 	
 	WebDrivers driver = new WebDrivers();
 	WebDriver chrome = driver.chromeDriver();
-	WebDriver firefox = driver.fireFox();
+	WebDriver firefox = driver.FireFox();
 	
 	@Test
 	public void testWebDriver() {

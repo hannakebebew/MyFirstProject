@@ -13,16 +13,16 @@ public class FacebTestCases {
 	public void CredentialVerification () {
 		
 		
-		driver = WebDrivers.fireFox();
+		driver = WebDrivers.FireFox();
 		driver.manage().window().maximize();
 		//driver.manage().deleteAllCookies();
 		driver.get("https://en-gb.facebook.com/login/");
 		
 		
 		FacebkMethods login = new FacebkMethods (driver);
-		FacebkMethods login1 = PageFactory.initElements(driver, Maven.SeleniumProject.FacebkMethods.class);
+		//FacebkMethods login1 = PageFactory.initElements(driver, Maven.SeleniumProject.FacebkMethods.class);
 		
-		login1.usernameTextField.sendKeys("Hello");
+		//login1.usernameTextField.sendKeys("Hello");
 		
 		
 		login.accessFB("hanna", "1234l;");
