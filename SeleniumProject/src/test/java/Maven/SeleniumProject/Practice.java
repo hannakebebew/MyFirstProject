@@ -17,6 +17,7 @@ public class Practice {
 		chrome.get("http://www.amazon.com");
 		chrome.manage().window().maximize();
 		firefox.get("HTTP://yahoo.com");
+
 	}
 
 	@AfterTest

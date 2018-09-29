@@ -17,17 +17,14 @@ public class Excersice2 {
 	
 	public void invokeBrowser () {
 		
-		WebDriver chrome = driver.chromeDriver();
+		WebDriver chrome = WebDrivers.FireFox(); 
 		
 		try {
-			chrome.navigate().to("http://www.google.com");
+			chrome.navigate().to("https://www.linkedin.com/uas/login?_l=en");
 			chrome.manage().window().maximize();
 			chrome.manage().deleteAllCookies();
 		
-			chrome.navigate().back();
-			Thread.sleep(2000);
-			chrome.navigate().forward();
-			chrome.navigate().refresh();
+			chrome.close();
 		} catch (Exception e) {
 			
 			e.printStackTrace();
@@ -35,13 +32,7 @@ public class Excersice2 {
 		
 		
 	
-		
 	}
-	@AfterTest
-	public void close() {
-		driver.chromeDriver().close(); 
-	}
-	
 	
 
 }

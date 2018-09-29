@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="PallaerlTesting" parallel="classes">
+	<test name="TestPallaerl1">
+		<classes>
+			<class name="Maven.SeleniumProject.Exersice2" />
+		</classes>
+	</test>
+	
+	<test name="TestPallaerl2" >
+		<classes>
+			<class name="Maven.SeleniumProject.Practice" />
+		</classes>
+	</test>
+</suite>

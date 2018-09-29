@@ -8,7 +8,7 @@ public class Factory2 {
 	
 	static WebDriver driver;
 	
-	public static void openBrowser (String browser, String url) {
+	public static WebDriver openBrowser (String browser, String url) {
 		
 		if (browser.equalsIgnoreCase("firefox"))
 			driver =  WebDrivers.FireFox(); 
@@ -20,7 +20,10 @@ public class Factory2 {
 			
 			driver.manage().window().maximize();
 			driver.get("https://www.linkedin.com/uas/login");
+			
+			
 		}
+		return driver;
 	}
 
 }

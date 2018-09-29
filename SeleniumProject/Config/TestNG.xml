@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestNG">
+	<test name="Annotation">
+
+		<groups>
+			<run>
+				<include name="A" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="TestNGExcer.Annotation" />
+
+		</classes>
+	</test>
+</suite>
